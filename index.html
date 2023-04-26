@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đây chỉ là một cái link bình thường.</title>
+
     <style>
         .body-bg {
 	width: 100%;
@@ -20,6 +21,7 @@
 
 
 .container {
+	color: black;
 	width: 80%;
 	height: 80%;
 	position: fixed;
@@ -92,35 +94,71 @@
 
     </style>
     
-	<title>Page Title</title>
+
 </head>
 
 <body>
 	<div class="body-bg"></div>
 	<div class="container">
+	
+		<div style=" margin-left: 30px; text-align: justify;margin-top: 160px;margin-right: 150px;font-size: 20px;">
+			<em>Happy birthday to you!</em><br>
+			<p>Mới đầu tính làm video dạng animation nhưng mấy tháng gần đây ngày nào mình cũng cần ra trường cấp 3 nên hơi khó thực hiện. Năm trước một vài người tham gia lồng tiếng họ đổi ý vào giờ chót nên phải viết lại kịch bản và vẽ lại từ đầu.</p>
+			<p>Lúc đó đang vẽ bình thường thì lại phải đổi phong cách vẽ sang stickman (người que) để cho kịp giờ. Một khi đã làm animation thì mình muốn vẽ cho nó tử tế chứ không muốn nó lại trở thành <strong>"Thảm họa phim hoạt hình"</strong> như năm trước. </p>
+			
+			<p>À! Nhờ làm mấy cái này mà mình đã học được cách lập trình web và sử dụng GitHub để lưu code dù không phải chuyên ngành.</p>
+			<p>Bật mí: Thật ra là wesite này có nhạc đấy nhưng khi nghe lại thì thấy mình chơi ukulele dở quá nên phải xóa vội.😅 </p>
+			<em>Vậy thôi! Hi vọng từ sáng tới giờ không trách mình quên sinh nhật.</em>
+			
+		</div>
 		<div class="container-data">
+			
 			<div id="msg">
-             
-
             </div>
+			
 		</div>
 	</div>
     <script>
+	
+
         var messages = ["Happy birthday to Ánh🎉",
         "Chúc mừng sinh nhật lần thứ 21",
-        "Có một ngày sinh nhật vui",
+        "Có một ngày sinh nhật là vui",
         "Lại là website chúc mừng nè",
         "Chúc một ngày tốt lành",
         "Cắt bánh đi 🎂",
-        "Hey! Nothing to read here"
-
+        "Hey! Nothing to read here",
+		"Nên nói gì tiếp nhỉ?",
+		"DON'T READ THIS!",
+		"Tại sao bạn lại vào website này?",
+		"How did you get here?",
+		"お誕生日おめでとう🎉",
+		"Did you know about that?",
+		"Bạn có đang đọc dòng này không?",
+		"Made by FoxCode!",
+		"ありがとう！",
+		"What are you thinking?",
+		"I know that you know that I know.",
+		"Why are you still here?",
+		"Do you like this?",
+		"Sinh nhật của bạn thế nào?"
         ];
-        
+
+		document.getElementById("msg")
+		.innerHTML = "Vns hxsjs ";
+
+		document.getElementById("msg")
+		.innerHTML = '" ' + messages[0] + ' "'
+
+        setInterval(myTimer, 8000);
+		function myTimer() {
         var i = messages.length;
         var s = Math.floor(Math.random() * i);
-        
         document.getElementById("msg")
         .innerHTML = '" ' + messages[s] + ' "';
+		}
+		
+
     </script>
     
 </body>
