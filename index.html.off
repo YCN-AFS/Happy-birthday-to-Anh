@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .body-bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: radial-gradient(#00e72a, #013A4E);
+	transition: all 0.5s;
+}
+
+
+.container {
+	width: 90%;
+	height: 90%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: linear-gradient(#00E7BD, #013A4E);
+	box-shadow: 0 0 20px 2px #013A4E;
+    border-radius:4%;
+}
+
+.container-data {
+	padding: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	transform: translateX(-50%) translateY(-260%);
+	text-align: center;
+	color: #fff;
+	font-family: Arial;
+	font-size: 3vw;
+}
+
+@media only screen and (max-width: 763px) {
+	.container-data {
+		padding: 24px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 80%;
+		transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		color: #fff;
+		font-family: Arial;
+		font-size: 6vw;
+	}
+}
+
+@media only screen and (max-height: 423px) {
+	.container-data {
+		padding: 24px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 80%;
+		transform: translateX(-50%) translateY(-50%);
+		text-align: center;
+		color: #fff;
+		font-family: Arial;
+		font-size: 4vw;
+	}
+}
+
+    </style>
+    
+	<title>Page Title</title>
+</head>
+
+<body>
+	<div class="body-bg"></div>
+	<div class="container">
+		<div class="container-data">
+			<div id="msg">
+             
+
+            </div>
+		</div>
+	</div>
+    <script>
+        var messages = ["Happy birthday to Ánh",
+        "Chúc mừng sinh nhật lần thứ 21",
+        "Hi vọng bạn đã có một ngày sinh nhật thật vui vẻ",
+        "Lại là website chúc mừng nè",
+        "Hi vọng bạn đã có một ngày thật là vui nha",
+        ];
+        
+        var i = messages.length;
+        var s = Math.floor(Math.random() * i);
+        
+        document.getElementById("msg")
+        .innerHTML = '" ' + messages[s] + ' "';
+    </script>
+    
+</body>
+</html>
