@@ -53,43 +53,45 @@
 .container-data {
 	padding: 24px;
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	left: 50%;
 	width: 80%;
-	transform: translateX(-50%) translateY(-260%);
+	transform: translateX(-50%) translateY(-50%);
 	text-align: center;
 	color: #fff;
 	font-family: Arial;
-	font-size: 3vw;
+	font-size: 100%;
 }
 
-@media only screen and (max-width: 763px) {
+@media only screen   and (max-width: 763px){
 	.container-data {
 		padding: 24px;
 		position: absolute;
-		top: 50%;
+		top: 10%;
 		left: 50%;
 		width: 80%;
-		transform: translateX(-50%) translateY(-50%);
+		/*transform: translateX(-50%) translateY(-50%);*/
 		text-align: center;
 		color: #fff;
 		font-family: Arial;
-		font-size: 6vw;
+		font-size: 0.8em;
+		margin-top: 2%;
 	}
 }
 
-@media only screen and (max-height: 423px) {
+@media only screen  and (max-height: 423px){
 	.container-data {
 		padding: 24px;
 		position: absolute;
-		top: 50%;
+		top: 10%;
 		left: 50%;
 		width: 80%;
-		transform: translateX(-50%) translateY(-50%);
+		/*transform: translateX(-50%) translateY(-50%);*/
 		text-align: center;
 		color: #fff;
 		font-family: Arial;
-		font-size: 4vw;
+		font-size: 0.8em;
+		margin-top: 2%;
 	}
 }
 
@@ -102,6 +104,7 @@
 	
 	<div class="body-bg"></div>
 	<div class="container">
+		
 		<div style="margin-left: 10%; text-align: justify;margin-top: 16%;margin-right: 10%;font-size: 1.25em; margin-bottom: 16%;">
 			<em>Happy birthday to you!</em><br>
 			<p>Mới đầu tính làm video dạng animation nhưng mấy tháng gần đây ngày nào mình cũng cần ra trường cấp 3 nên hơi khó thực hiện. Năm trước một vài người tham gia lồng tiếng họ đổi ý vào giờ chót nên phải viết lại kịch bản và vẽ lại từ đầu.</p>
@@ -113,8 +116,8 @@
 			
 		</div>
 		<div class="container-data">
+			<div style="font-size: 2.2em;margin-bottom: 0%;" id="msg"></div>
 			
-			<div id="msg">
             </div>
 			
 		</div>
@@ -145,6 +148,7 @@
 		"Do you like this?",
 		"Sinh nhật của bạn thế nào?",
 		"Do you want to play a chess with me?",
+		"Bạn vẫn đang ở đây chứ?"
 		
 
         ];
