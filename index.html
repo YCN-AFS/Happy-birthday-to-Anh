@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<!--BẠN LÀ AI? VÀO ĐÂY ĐỂ LÀM GÌ?-->
 <head>
 	<meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,10 +98,10 @@
 </head>
 
 <body>
+	
 	<div class="body-bg"></div>
 	<div class="container">
-	
-		<div style=" margin-left: 30px; text-align: justify;margin-top: 160px;margin-right: 150px;font-size: 20px;">
+		<div style="margin-left: 10%; text-align: justify;margin-top: 16%;margin-right: 10%;font-size: 20px; margin-bottom: 16%;">
 			<em>Happy birthday to you!</em><br>
 			<p>Mới đầu tính làm video dạng animation nhưng mấy tháng gần đây ngày nào mình cũng cần ra trường cấp 3 nên hơi khó thực hiện. Năm trước một vài người tham gia lồng tiếng họ đổi ý vào giờ chót nên phải viết lại kịch bản và vẽ lại từ đầu.</p>
 			<p>Lúc đó đang vẽ bình thường thì lại phải đổi phong cách vẽ sang stickman (người que) để cho kịp giờ. Một khi đã làm animation thì mình muốn vẽ cho nó tử tế chứ không muốn nó lại trở thành <strong>"Thảm họa phim hoạt hình"</strong> như năm trước. </p>
@@ -122,6 +122,7 @@
 	
 
         var messages = ["Happy birthday to Ánh🎉",
+		"Bạn có hiểu không mã morse?",
         "Chúc mừng sinh nhật lần thứ 21",
         "Có một ngày sinh nhật là vui",
         "Lại là website chúc mừng nè",
@@ -141,11 +142,13 @@
 		"I know that you know that I know.",
 		"Why are you still here?",
 		"Do you like this?",
-		"Sinh nhật của bạn thế nào?"
+		"Sinh nhật của bạn thế nào?",
+		"Do you want to play a chess with me?",
+		
+
         ];
 
-		document.getElementById("msg")
-		.innerHTML = "Vns hxsjs ";
+		
 
 		document.getElementById("msg")
 		.innerHTML = '" ' + messages[0] + ' "'
@@ -155,8 +158,20 @@
         var i = messages.length;
         var s = Math.floor(Math.random() * i);
         document.getElementById("msg")
+		
         .innerHTML = '" ' + messages[s] + ' "';
 		}
+		//var x = document.getElementById("myAudio"); 
+		//function playAudio() { 
+  		//x.play(); 
+		//} 
+		//if (true) {
+		//var sound = new Audio("morse.ogg");
+		//sound.play();
+		//}
+		
+		
+		
 		
 
     </script>
