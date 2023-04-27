@@ -160,7 +160,9 @@
 	var i = messages.length;
 	var s = Math.floor(Math.random() * i);
         document.getElementById("msg")
-
+	.innerHTML = '" ' + messages[s] + ' "';
+	    
+	    
         setInterval(myTimer, 8000);
 		function myTimer() {
         var i = messages.length;
