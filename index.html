@@ -29,6 +29,7 @@
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	
+	
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
@@ -51,47 +52,31 @@
 }
 
 .container-data {
-	padding: 24px;
-	position: absolute;
-	top: 10%;
-	left: 50%;
+	
+	padding:3%;
+	top: 1%;
 	width: 80%;
-	transform: translateX(-50%) translateY(-50%);
+	right: 3.5%;
+	/*transform: translateX(-50%) translateY(-50%);*/
 	text-align: center;
 	color: #fff;
 	font-family: Arial;
-	font-size: 100%;
+	font-size: 0.8em;
 }
 
-@media only screen   and (max-width: 763px){
-	.container-data {
-		padding: 24px;
-		position: absolute;
-		top: 10%;
-		left: 50%;
-		width: 80%;
-		/*transform: translateX(-50%) translateY(-50%);*/
-		text-align: center;
-		color: #fff;
-		font-family: Arial;
-		font-size: 0.8em;
-		margin-top: 2%;
-	}
-}
 
-@media only screen  and (max-height: 423px){
+
+@media only screen { /* and (max-height: 423px){*/
 	.container-data {
-		padding: 24px;
-		position: absolute;
-		top: 10%;
-		left: 50%;
+		margin: auto;
+		padding: 3%;
+		
 		width: 80%;
 		/*transform: translateX(-50%) translateY(-50%);*/
-		text-align: center;
 		color: #fff;
 		font-family: Arial;
-		font-size: 0.8em;
-		margin-top: 2%;
+		font-size: 80%;
+		margin-top: 3%;
 	}
 }
 
@@ -102,31 +87,34 @@
 
 <body>
 	
-	<div class="body-bg"></div>
+<div class="body-bg">
 	<div class="container">
+		<div class="container-data"><div style="font-size: 2.2em;" id="msg"></div></div>
+			<div style="margin-left: 10%; text-align: justify;margin-top: 3%;margin-right: 10%;font-size: 1.25em; margin-bottom: 15%;">
+			
+				<em>Happy birthday to you!</em><br>
+				<p>Mới đầu tính làm video dạng animation nhưng mấy tháng gần đây ngày nào mình cũng cần ra trường cấp 3 nên hơi khó thực hiện. Năm trước một vài người tham gia lồng tiếng họ đổi ý vào giờ chót nên phải viết lại kịch bản và vẽ lại từ đầu.</p>
+				<p>Lúc đó đang vẽ bình thường thì lại phải đổi phong cách vẽ sang stickman (người que) để cho kịp giờ. Một khi đã làm animation thì mình muốn vẽ cho nó tử tế chứ không muốn nó lại trở thành <strong>"Thảm họa phim hoạt hình"</strong> như năm trước. </p>
+				
+				<p>À! Nhờ làm mấy cái này mà mình đã học được cách lập trình web và sử dụng GitHub để lưu code dù không phải chuyên ngành.</p>
+				<p>Bật mí: Thật ra là wesite này có nhạc đấy nhưng khi nghe lại thì thấy mình chơi ukulele dở quá nên phải xóa vội.😅 </p>
+				<em>Vậy thôi! Hi vọng từ sáng tới giờ không trách mình quên sinh nhật.</em>
+			
+			</div>
+			<br>
+		</div>
+	</div></div>
+</div>
+<br>
+</div>
 		
-		<div style="margin-left: 10%; text-align: justify;margin-top: 16%;margin-right: 10%;font-size: 1.25em; margin-bottom: 16%;">
-			<em>Happy birthday to you!</em><br>
-			<p>Mới đầu tính làm video dạng animation nhưng mấy tháng gần đây ngày nào mình cũng cần ra trường cấp 3 nên hơi khó thực hiện. Năm trước một vài người tham gia lồng tiếng họ đổi ý vào giờ chót nên phải viết lại kịch bản và vẽ lại từ đầu.</p>
-			<p>Lúc đó đang vẽ bình thường thì lại phải đổi phong cách vẽ sang stickman (người que) để cho kịp giờ. Một khi đã làm animation thì mình muốn vẽ cho nó tử tế chứ không muốn nó lại trở thành <strong>"Thảm họa phim hoạt hình"</strong> như năm trước. </p>
-			
-			<p>À! Nhờ làm mấy cái này mà mình đã học được cách lập trình web và sử dụng GitHub để lưu code dù không phải chuyên ngành.</p>
-			<p>Bật mí: Thật ra là wesite này có nhạc đấy nhưng khi nghe lại thì thấy mình chơi ukulele dở quá nên phải xóa vội.😅 </p>
-			<em>Vậy thôi! Hi vọng từ sáng tới giờ không trách mình quên sinh nhật.</em>
-			
-		</div>
-		<div class="container-data">
-			<div style="font-size: 2.2em;margin-bottom: 0%;" id="msg"></div>
-			
-            </div>
-			
-		</div>
-	</div>
+		
+	
     <script>
 	
 
         var messages = ["Happy birthday to Ánh🎉",
-		"Bạn có biết mã mkhôngkhông?",
+		"Bạn có biết mã morse ?",
         "Chúc mừng sinh nhật lần thứ 21",
         "Có một ngày sinh nhật là vui",
         "Lại là website chúc mừng nè",
@@ -155,15 +143,14 @@
 		"👉👈",
 		"Tại sao mình lại làm cái website này?",
 		"Có một lời nhắn ẩn dấu trong mã nguồn của website này!",
-		
 
         ];
-	var i = messages.length;
-	var s = Math.floor(Math.random() * i);
-        document.getElementById("msg")
-	.innerHTML = '" ' + messages[s] + ' "';
-	    
-	    
+
+		
+
+		document.getElementById("msg")
+		.innerHTML = '" ' + messages[0] + ' "'
+
         setInterval(myTimer, 8000);
 		function myTimer() {
         var i = messages.length;
